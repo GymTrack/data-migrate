@@ -5,7 +5,6 @@ require "data_migrate/version"
 Gem::Specification.new do |s|
   s.name        = "data_migrate"
   s.version     = DataMigrate::VERSION
-  s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew J Vargo"]
   s.email       = ["ajvargo@computer.org"]
   s.homepage    = "http://ajvargo.com"
@@ -14,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "data_migrate"
 
-  s.add_dependency('rails', '>= 3.1.0')
+  s.add_dependency('rails', '>= 4.1.0')
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
